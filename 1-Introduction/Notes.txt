@@ -1,0 +1,11 @@
+DevOps Practices:
+1. Continuous Integration
+2. Continuous Delivery / Continuous Deployment
+3. Microservices (AWS Lambda or Spring Boot)
+4. Infrastructure as code (CloudFormation or Terraform)
+5. Monitoring and Logging (Splunk, Cloud Watch, Cloud Trail, Grafana, DataDog, Prometheus)
+6. Communication and Collaboration (Slack, Lambda)
+
+Blue/Green or A/B Deployment:
+Consider the environment that contains the current version of code is Blue environment, then we create a new similar environment called Green environment. Then we deploy the new version of code to the Green environment. The main advantage of following this approach is to reduce the effect of bugs in live environment. If it triggers any issues in the Green environment then we change the DNS to Blue environment and we troubleshoot in the Green environment.
+**Note: We can destroy the other environment once the latest code is deployed without any errors or issues.
