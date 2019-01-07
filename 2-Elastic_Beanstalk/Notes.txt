@@ -1,0 +1,14 @@
+With AWS Elastic Beanstalk, you can quickly deploy and manage applications in the AWS Cloud without worrying about the infrastructure that runs those applications. AWS Elastic Beanstalk reduces management complexity without restricting choice or control. You simply upload your application, and AWS Elastic Beanstalk automatically handles the details of capacity provisioning, load balancing, scaling, and application health monitoring.
+
+Create a FanboyAnsible Application:
+To run a sample application on AWS resources, Elastic Beanstalk takes the following actions:
+1. Creates an Elastic Beanstalk application named FanboyAnsible.
+2. Launches an environment named Fanboyansible-env with the following AWS resources:
+    - EC2 Instance
+    - Instance Security Group
+    - S3 Bucket
+    - Two CloudWatch Alarms
+    - AWS CloudFormation stack
+    - Domain name (Fanboyansible-env.m9mbrqj7nt.us-east-1.elasticbeanstalk.com)
+3. Creates a new application version named Sample Application, which refers to the default Elastic Beanstalk sample application file.
+4. Deploys the sample application code to Fanboyansible-env.
